@@ -4,3 +4,6 @@
 
 layout: home
 ---
+
+The  **Xinka** , or  **Xinca** , are a non-Mayan Indigenous peoples of the Americas of Mesoamerica. Discover them here !  
+
