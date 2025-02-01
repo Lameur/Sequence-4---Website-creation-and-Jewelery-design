@@ -1,0 +1,10 @@
+---
+layout: page
+title:  "Beliefs"
+permalink: /Beliefs/
+---
+The Xinca people have a rich spiritual heritage that includes unique practices and ceremonies. One of the most significant rituals is the fire ceremony, which serves as a means of connecting with their ancestors and the spiritual realm. These ceremonies are integral to their cultural identity and are performed to honor their traditions and seek guidance.
+
+![](https://revistaviatori.com/wp-content/uploads/2018/05/MG_0196.jpg)
+
+![](https://hablemosdeculturas.com/wp-content/uploads/2018/01/xinca-9.jpg)
