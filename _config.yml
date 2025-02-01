@@ -23,7 +23,7 @@ email: lameur.tech@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Xinca people
 baseurl: "/xinca" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://lameur.github.io/Sequence-4---Website-creation-and-Jewelery-design" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username: Lameur
 
@@ -41,14 +41,8 @@ plugins:
 # their entries' file path in the `include:` list.
 #
 exclude:
-  - README.md
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - .
+include:
+  - pages/
+
+source: pages
