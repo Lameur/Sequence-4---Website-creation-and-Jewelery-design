@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Include Web Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="main">
+  <link rel="stylesheet" href="CSS/Style.css">
+  <div id="background">
+    <div id="content">
+      <script>
+        $(document).ready(function(){
+          $("#content").load("./HTML/Page1.html");
+        });
+      </script>
+    </div>
+    <div id="content2">
+      <script>
+        $(document).ready(function(){
+          $("#content2").load("./HTML/Page2.html");
+        });
+      </script>
+    </div>
+  </div>
+</body>
+</html>
