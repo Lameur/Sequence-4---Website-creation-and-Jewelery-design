@@ -9,4 +9,5 @@ The Xinca, also spelled Xinka, are an indigenous people of southeastern Guatemal
 ![](https://culturasdeguatemala.top/wp-content/uploads/2022/01/vestimenta-de-la-cultura-Xinca-870x570.jpg)
 
 Here a potentially interressing video :
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/BGVFYJ7utCQ" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/BGVFYJ7utCQ" title="A Thing of Beauty: The Xinkan Language" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
