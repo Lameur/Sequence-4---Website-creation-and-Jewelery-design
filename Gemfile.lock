@@ -319,6 +319,7 @@ DEPENDENCIES
   fiddle
   github-pages
   http_parser.rb (~> 0.6.0)
+  jekyll-avatar
   jekyll-coffeescript
   jekyll-feed
   jekyll-gist
