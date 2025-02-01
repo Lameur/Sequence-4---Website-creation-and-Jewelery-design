@@ -32,7 +32,7 @@ theme: minima
 #remote_theme: jekyll/minima
 
 minima:
-  skin: auto
+  skin: dark
 
 hearder_pages:
   - index.md
@@ -40,7 +40,7 @@ hearder_pages:
 
 author:
   name: Adam AUCLAIR
-  email: ""
+  # email: ""
 
 plugins:
   - jekyll-spaceship
