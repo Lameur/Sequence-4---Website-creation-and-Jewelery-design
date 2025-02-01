@@ -23,6 +23,7 @@ end
 gem "jekyll-gist"
 gem "jekyll-coffeescript"
 gem "fiddle"
+gem "ostruct"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
