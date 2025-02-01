@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: about
 title: About
 permalink: /about/
+nav_order: 4
 ---
-
-**This site was made with Jekyll ⬇️ by !{% avatar Lameur %}**
+**This site was made with Jekyll ⬇️ by {% avatar Lameur %}**
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
@@ -18,4 +18,3 @@ You can find the source code for Jekyll at GitHub:
 
 [Lameur]: https://github.com/Lameur
 [jekyll-organization]: https://github.com/jekyll
-
