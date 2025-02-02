@@ -39,7 +39,7 @@ hearder_pages:
   - about.md
 
 author:
-  name: Adam AUCLAIR
+  # name: Adam AUCLAIR
   # email: ""
 
 plugins:
