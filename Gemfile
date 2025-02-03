@@ -19,8 +19,6 @@ group :jekyll_plugins do
   gem 'jekyll-spaceship'
 end
 
-gem 'jekyll-admin', group: :jekyll_plugins
-
 gem "jekyll-gist"
 gem "jekyll-coffeescript"
 gem "fiddle"

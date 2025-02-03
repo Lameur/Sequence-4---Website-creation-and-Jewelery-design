@@ -22,7 +22,7 @@ title: Xinca
 # email:
 description: >- # this means to ignore newlines until "baseurl:"
   Xinca people
-baseurl: "/xinca" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://lameur.github.io/Sequence-4---Website-creation-and-Jewelery-design" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username: Lameur

@@ -1,2 +1,17 @@
+[env]
+# supports arbitrary env vars so mise can be used like direnv/dotenv
+
 [tools]
-ruby = "latest"
+# supports everything you can do with .tool-versions currently
+ruby = 'latest' 
+
+[alias.ruby.versions] # project-local aliases
+# use vfox:version-fox/vfox-ruby when running `mise i node@backend`
+backend = "vfox:version-fox/vfox-ruby"
+# install node-20.x when running `mise i node@my_custom_node`
+
+[tasks.build]
+run = 'echo "build the website" && bundle install && bundle exec jekyll build'
+
+[tasks.server]
+run = 'echo "serve the website locally" && bundle install && bundle exec jekyll server'
