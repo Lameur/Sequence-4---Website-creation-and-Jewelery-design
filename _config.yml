@@ -28,11 +28,8 @@ url: "https://lameur.github.io/Sequence-4---Website-creation-and-Jewelery-design
 github_username: Lameur
 
 # Build settings
-theme: minima
-#remote_theme: jekyll/minima
-
-minima:
-  skin: dark
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "neon"
 
 hearder_pages:
   - index.md
@@ -45,7 +42,6 @@ author:
 plugins:
   - jekyll-spaceship
   - jekyll-avatar
-  #- jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
