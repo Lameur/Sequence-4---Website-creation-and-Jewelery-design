@@ -7,28 +7,46 @@ ruby = "latest"
 node = "lts"
 
 [tasks.lint]
-description = "Lint with Prettier"
+description = "Lint with Prettier and Rubocop"
 run = [
   'npm install prettier',
-  'npm exec prettier'
+  'npm exec prettier',
+  'rubocop',
 ]
 hide = true
 alias = 'l'
 
-[tasks.bundle]
-description = 'Update gem bundle'
-run = 'bundle install'
+[tasks."bundle:install"]
+description = 'Install gem dependencies'
+run = [
+  'bundle install',
+]
 hide = true
-alias = 'i'
+alias = 'bi'
+
+[tasks."bundle:update"]
+description = 'Update gem'
+run = [
+  'bundle update',
+]
+hide = true
+alias = 'bu'
+
+[tasks.bundle]
+description = 'Bundle'
+run = [
+  'bundle',
+]
+hide = true
 
 [tasks.build]
 description = 'Build the website'
-depends = ['bundle']
+depends = ['"bundle:install"']
 run = 'bundle exec jekyll build'
 alias = 'b' # `mise run b`
 
 [tasks.server]
 description = 'Serve locally the website'
-depends = ['bundle']
+depends = ['"bundle:install"']
 run = 'bundle exec jekyll server'
 alias = 's'
