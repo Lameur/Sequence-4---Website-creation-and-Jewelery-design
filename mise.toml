@@ -2,19 +2,24 @@
 # supports arbitrary env vars so mise can be used like direnv/dotenv
 
 [tools]
-"aqua:pnpm/pnpm" = "latest"
-npm = "latest"
 ruby = "latest"
+"ubi:CircleCI-Public/circleci-cli[exe=circleci]" = "latest"
+node = "lts"
 
-
-[alias.ruby.versions] # project-local aliases
-# use vfox:version-fox/vfox-ruby when running `mise i node@backend`
-backend = "aqua"
+[tasks.lint]
+description = "Lint with Prettier"
+run = [
+  'npm install prettier',
+  'npm exec prettier'
+]
+hide = true
+alias = 'l'
 
 [tasks.bundle]
 description = 'Update gem bundle'
 run = 'bundle install'
 hide = true
+alias = 'i'
 
 [tasks.build]
 description = 'Build the website'
