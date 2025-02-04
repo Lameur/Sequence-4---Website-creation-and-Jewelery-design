@@ -2,16 +2,28 @@
 # supports arbitrary env vars so mise can be used like direnv/dotenv
 
 [tools]
-# supports everything you can do with .tool-versions currently
-ruby = 'latest' 
+"aqua:pnpm/pnpm" = "latest"
+npm = "latest"
+ruby = "latest"
+
 
 [alias.ruby.versions] # project-local aliases
 # use vfox:version-fox/vfox-ruby when running `mise i node@backend`
-backend = "vfox:version-fox/vfox-ruby"
-# install node-20.x when running `mise i node@my_custom_node`
+backend = "aqua"
+
+[tasks.bundle]
+description = 'Update gem bundle'
+run = 'bundle install'
+hide = true
 
 [tasks.build]
-run = 'echo "build the website" && bundle install && bundle exec jekyll build'
+description = 'Build the website'
+depends = ['bundle']
+run = 'bundle exec jekyll build'
+alias = 'b' # `mise run b`
 
 [tasks.server]
-run = 'echo "serve the website locally" && bundle install && bundle exec jekyll server'
+description = 'Serve locally the website'
+depends = ['bundle']
+run = 'bundle exec jekyll server'
+alias = 's'

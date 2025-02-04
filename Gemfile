@@ -7,23 +7,27 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-#gem "jekyll"
+gem "jekyll"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
-gem "github-pages", group: :jekyll_plugins
+# gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-seo-tag"
   gem 'jekyll-spaceship'
+  gem "jekyll-avatar"
+  gem "jekyll-gist"
+  gem "jekyll-coffeescript"
+  gem "jekyll-admin"
 end
 
-gem "jekyll-gist"
-gem "jekyll-coffeescript"
 gem "fiddle"
 gem "ostruct"
-gem 'jekyll-avatar'
+gem "faraday-retry"
+gem "rack"
+gem "webrick"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
