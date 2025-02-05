@@ -1,0 +1,53 @@
+exclude = ["target", "**/*.docx", "**/*.pdf", "**/_site", "**/*.png", "**/*.ico"]
+
+
+[commands.omegasort-gitignore]
+type = "both"
+include = "**/.gitignore"
+cmd = ["omegasort", "--sort=path", "--unique"]
+lint_flags = "--check"
+tidy_flags = "--in-place"
+ok_exit_codes = 0
+lint_failure_exit_codes = 1
+expect_stderr = true
+labels = ["default", "fast-tidy"]
+
+[commands.prettier]
+type = "both"
+include = ["**/*.md", "**/*.yml"]
+cmd = [
+    "prettier",
+    "--no-config",
+    "--prose-wrap",
+    "always",
+    "--print-width",
+    "100",
+    "--cache",
+    "--cache-location",
+    ".prettier",
+]
+lint_flags = "--check"
+tidy_flags = "--write"
+ok_exit_codes = 0
+lint_failure_exit_codes = 1
+ignore_stderr = "Code style issues"
+labels = ["default", "fast-tidy"]
+
+[commands.typos]
+type = "lint"
+include = "**/*"
+exclude = ["**/*.docx", "**/*.pdf", "**/_site", "**/*.png", "**/*.ico"]
+cmd = "typos"
+invoke = "once"
+ok-exit-codes = 0
+lint-failure-exit-codes = 2
+
+[commands.taplo]
+type = "both"
+include = "**/*.toml"
+cmd = ["taplo", "format", "--option", "indent_string=    ", "--option", "column_width=100"]
+lint_flags = "--check"
+ok_exit_codes = 0
+lint_failure_exit_codes = 1
+ignore_stderr = "INFO taplo.+"
+labels = ["default", "fast-tidy"]
