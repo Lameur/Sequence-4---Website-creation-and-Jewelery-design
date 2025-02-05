@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: splash
 title: About
 permalink: /about/
+classes: wide
 ---
 **This site was made with [jekyll][jekyll-organization] by [{% avatar Lameur %}][Lameur] [Lameur].**
 

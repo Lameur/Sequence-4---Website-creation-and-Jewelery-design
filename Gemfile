@@ -20,7 +20,6 @@ group :jekyll_plugins do
   gem "jekyll-avatar"
   gem "jekyll-gist"
   gem "jekyll-coffeescript"
-  gem "jekyll-admin"
   gem "jekyll-include-cache"
 end
 

@@ -29,15 +29,37 @@ github_username: Lameur
 
 # Build settings
 theme: minimal-mistakes-jekyll
+
+# Theme settings
 minimal_mistakes_skin: "neon"
 
-hearder_pages:
+defaults:
+    # _pages
+      - scope:
+          path: ""
+          type: pages
+        values:
+          layout: single
+          classes: wide
+search: true
+
+
+header_pages:
   - index.md
   - about.md
 
 author:
-  # name: Adam AUCLAIR
-  # email: ""
+  name: "Lameur"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Lameur"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Lameur"
 
 plugins:
   - jekyll-spaceship

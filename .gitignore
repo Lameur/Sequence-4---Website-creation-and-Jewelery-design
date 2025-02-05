@@ -1,9 +1,10 @@
-_site
-.sass-cache
 .jekyll-cache
 .jekyll-metadata
-vendor
-
+.ruby-lsp
+.sass-cache
+_site
 node_modules
 package-lock.json
 package.json
+vendor
+.prettier
