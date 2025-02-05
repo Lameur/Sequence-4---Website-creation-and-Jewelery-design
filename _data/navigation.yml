@@ -1,9 +1,0 @@
-main:
-  - title: "About"
-    url: /about/
-  - title: "Posts"
-    url: /Beliefs/
-  - title: "Customs"
-    url: /Customs/
-  - title: "Location"
-    url: /Location/
