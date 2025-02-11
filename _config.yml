@@ -28,10 +28,12 @@ url: "https://lameur.github.io/Sequence-4---Website-creation-and-Jewelery-design
 github_username: Lameur
 
 # Build settings
-theme: minimal-mistakes-jekyll
+theme: minima
 
 # Theme settings
 minimal_mistakes_skin: "neon"
+minima:
+    skin: auto
 
 defaults:
     # _pages
@@ -49,7 +51,7 @@ header_pages:
   - about.md
 
 author:
-  name: "Lameur"
+  name: Adam AUCLAIR
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
