@@ -15,7 +15,3 @@ Here a potentially interressing video :
 ![](https://www.youtube.com/watch?v=BGVFYJ7utCQ)
 
 
-<iframe width="100%" height="650" src="https://www.youtube.com/embed/BGVFYJ7utCQ" title="A Thing of Beauty: The Xinkan Language" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-
