@@ -47,15 +47,13 @@ search: true
 
 
 header_pages:
-  - index.md
+  - Location.md
+  - Beliefs.md
+  - Customs.md
   - about.md
 
-author:
-  name: Adam AUCLAIR
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/Lameur"
+#author:
+  #name: Adam AUCLAIR
 
 footer:
   links:
