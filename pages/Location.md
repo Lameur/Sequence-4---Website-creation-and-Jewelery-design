@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: pages
 title:  "Location"
 permalink: /Location/
 ---

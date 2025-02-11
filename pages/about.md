@@ -1,5 +1,5 @@
 ---
-layout: splash
+layout: pages
 title: About
 permalink: /about/
 classes: wide
