@@ -1,3 +1,5 @@
+#:schema https://github.com/jdx/mise/blob/main/schema/mise-task.json
+
 [lint]
 description = "Lint and tidy the code"
 run = ['precious lint', 'precious tidy']
@@ -6,29 +8,40 @@ alias = 'l'
 
 [bundle]
 description = 'Bundle'
-run = 'bundle'
+run = 'gum spin --show-output --spinner minidot --title "Using bundle..." -- bundle'
 hide = true
 
 ["bundle:install"]
 description = 'Install gem dependencies'
-run = 'bundle install'
+run = 'gum spin bundle install --show-output --spinner minidot --title "Installing bundle..."'
 hide = true
 alias = 'bi'
 
 ["bundle:update"]
 description = 'Update gem'
-run = 'bundle update'
+run = 'gum spin --show-output --spinner minidot --title "Updating bundle..." -- bundle update'
 hide = true
 alias = 'bu'
 
 [build]
 description = 'Build the website'
 depends = 'bundle:install'
-run = 'bundle exec jekyll build'
-alias = 'b' # `mise run b`
+run = 'gum spin --show-output --spinner minidot --title "Building jekyll site..." -- bundle exec jekyll build'
+alias = 'b'                                                                                                    # `mise run b`
 
 [serve]
 description = 'Serve locally the website'
-depends = 'bundle:install'
-run = 'bundle exec jekyll server'
+depends = ['bundle:install', 'build']
+run = 'gum spin --show-output --spinner minidot --title "Serving jekyll site..." -- bundle exec jekyll server'
 alias = 's'
+
+[commit]
+description = 'Commit change'
+run = 'ruby scripts/commit.rb'
+alias = 'gc'
+
+[push]
+description = 'Push change'
+depends = 'commit'
+run = 'git push'
+alias = 'gp'

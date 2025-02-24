@@ -1,3 +1,5 @@
+#:schema https://github.com/jdx/mise/blob/main/schema/mise.json
+
 [settings]
 experimental = false
 
@@ -6,15 +8,16 @@ experimental = false
 
 [tools]
 ruby = "latest"
-'ubi:CircleCI-Public/circleci-cli[exe=circleci]' = 'latest'
 'ubi:houseabsolute/omegasort' = 'latest'
 'ubi:houseabsolute/precious' = 'latest'
-bun = "latest"
 taplo = 'latest'
 'npm:prettier' = 'latest'
 pre-commit = 'latest'
 'npm:markdownlint-cli' = 'latest'
 typos = 'latest'
+gum = "latest"
+glow = "latest"
+skate = "latest"
 
 [task_config]
 includes = ["./.mise/tasks.toml"]

@@ -33,27 +33,17 @@ theme: minima
 # Theme settings
 minimal_mistakes_skin: "neon"
 minima:
-    skin: auto
-
-defaults:
-    # _pages
-      - scope:
-          path: ""
-          type: pages
-        values:
-          layout: single
-          classes: wide
-search: true
-
+  skin: auto
 
 header_pages:
   - Location.md
   - Beliefs.md
   - Customs.md
+  - Jewelry.md
   - about.md
 
 #author:
-  #name: Adam AUCLAIR
+#name: Adam AUCLAIR
 
 footer:
   links:
@@ -64,6 +54,13 @@ footer:
 plugins:
   - jekyll-spaceship
   - jekyll-avatar
+  - jekyll-responsive-magick
+  - jekyll-include-cache
+  - jekyll-toc
+  - jekyll-coffeescript
+  - jekyll-gist
+  - jekyll-admin
+  - jekyll-assets
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -79,6 +76,136 @@ include:
   - pages/
 
 source: pages
+
+## Plugins configuration
+
+# _config.yml
+assets:
+  source_maps: true
+  destination: "/assets"
+  compression: true
+  gzip: true
+  defaults:
+    integrity:
+      { css, img, js }: true
+  caching:
+    enabled: true
+    path: ".jekyll-cache/assets"
+    type: file
+  # --
+  # Assets you wish to always have compiled.
+  #   This can also be combined with raw_precompile which
+  #   copies assets without running through the pipeline
+  #   making them ultra fast.
+  # --
+  precompile:
+    [
+      js,
+      html,
+      css,
+      jpg,
+      jpeg,
+      png,
+      gif,
+      svg,
+      webp,
+      mp4,
+      webm,
+      mp3,
+      ogg,
+      ico,
+      woff,
+      woff2,
+      ttf,
+      eot,
+      otf,
+      json,
+      xml,
+      webmanifest,
+      webapp,
+      appcache,
+      m3u8,
+      m3u,
+      hls,
+      ts,
+      pdf,
+      docx,
+      xlsx,
+      pptx,
+      doc,
+      xls,
+      ppt,
+      zip,
+      gz,
+      bz2,
+      7z,
+      rar,
+      tar,
+      css.map,
+      js.map,
+      html.map,
+      svg.map,
+      webp.map,
+      mp4.map,
+      webm.map,
+      mp3.map,
+      ogg.map,
+      ico.map,
+      woff.map,
+      woff2.map,
+      ttf.map,
+      eot.map,
+      otf.map,
+      json.map,
+      xml.map,
+      webmanifest.map,
+      webapp.map,
+      appcache.map,
+      m3u8.map,
+      m3u.map,
+      hls.map,
+      ts.map,
+      pdf.map,
+      docx.map,
+      xlsx.map,
+      pptx.map,
+      doc.map,
+      xls.map,
+      ppt.map,
+      zip.map,
+      gz.map,
+      bz2.map,
+      7z.map,
+      rar.map,
+      tar.map,
+    ]
+  raw_precompile: []
+  #
+  # --
+  # baseurl: whether or not to append site.baseurl
+  # destination: the folder you store them in on the CDN.
+  # url: the CDN url (fqdn, or w/ identifier).
+  # --
+  cdn:
+    baseurl: true
+    destination: true
+    url: null
+  # --
+  # See lib/jekyll/assets/config.rb
+  #   for a list of defaults
+  # --
+  sources:
+    - _assets/custom
+  plugins:
+    css: { autoprefixer: {} }
+    img: { optim: {} }
+
+responsive:
+  widths: [400, 500, 700, 900]
+  heights: [400, 500, 700, 900]
+  quality: 100
+  format: webp
+  verbose: true
 
 # Where things are
 jekyll-spaceship:
