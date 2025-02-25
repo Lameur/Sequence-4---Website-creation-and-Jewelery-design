@@ -55,12 +55,12 @@ plugins:
   - jekyll-spaceship
   - jekyll-avatar
   - jekyll-responsive-magick
-  - jekyll-include-cache
+  # - jekyll-include-cache
   - jekyll-toc
-  - jekyll-coffeescript
-  - jekyll-gist
-  - jekyll-admin
-  - jekyll-assets
+  # - jekyll-coffeescript
+  # - jekyll-gist
+  # - jekyll-admin
+  # - jekyll-assets
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -2,7 +2,7 @@
 
 [lint]
 description = "Lint and tidy the code"
-run = ['precious lint', 'precious tidy']
+run = ['precious lint --all', 'precious tidy --all']
 hide = true
 alias = 'l'
 
@@ -34,6 +34,8 @@ description = 'Serve locally the website'
 depends = ['bundle:install', 'build']
 run = 'gum spin --show-output --spinner minidot --title "Serving jekyll site..." -- bundle exec jekyll server'
 alias = 's'
+
+[]
 
 [commit]
 description = 'Commit change'

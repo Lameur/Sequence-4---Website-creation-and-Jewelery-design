@@ -18,16 +18,16 @@ gem "minima"
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-seo-tag"
+  # gem "jekyll-seo-tag"
   gem 'jekyll-spaceship'
   gem "jekyll-avatar"
-  gem "jekyll-gist"
-  gem "jekyll-coffeescript"
-  gem "jekyll-include-cache"
+  # gem "jekyll-gist"
+  # gem "jekyll-coffeescript"
+  # gem "jekyll-include-cache"
   gem "jekyll-responsive-magick"
-  gem "jekyll-paginate-v2"
+  # gem "jekyll-paginate-v2"
   gem "jekyll-toc"
-  gem "jekyll-assets"
+  # gem "jekyll-assets"
   gem "jekyll-admin"
 end
 
@@ -37,7 +37,6 @@ gem "faraday-retry"
 gem "rack"
 gem "webrick"
 gem "nokogiri", ">= 1.18.3"
-gem "tty-prompt"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

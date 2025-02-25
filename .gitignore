@@ -1,5 +1,7 @@
+.commit-msg
 .jekyll-cache
 .jekyll-metadata
+.prettier
 .ruby-lsp
 .sass-cache
 _site
@@ -7,6 +9,3 @@ node_modules
 package-lock.json
 package.json
 vendor
-.prettier
-
-.commit-msg

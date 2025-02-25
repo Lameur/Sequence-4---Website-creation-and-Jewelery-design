@@ -6,34 +6,45 @@
 # description of the message and uses the values provided as the summary and
 # details of the message.
 
-require 'tty-prompt'
+require 'shellwords'  # Pour échapper les chaînes correctement
 
-prompt = TTY::Prompt.new
+# Appels directs à gum
+def run_gum(cmd)
+  `gum #{cmd}`.chomp
+end
 
-# Check if there are any changes to commit
-if `git status -s -uno`.strip.empty?
-  if prompt.yes?("Stage all?")
+# Fonction pour gérer le staging des modifications
+def stage_changes
+  # Vérifie s'il y a des changements non staged
+  unstaged = `git status -s -uno`.lines.map(&:chomp)
+  return if unstaged.empty?  # Rien à faire s'il n'y a pas de changements
+
+  # Propose des options pour le staging
+  options = ["Tout ajouter (git add .)", "Sélectionner des fichiers"]
+  choice = run_gum("choose \"#{options.join('" "')}\" --header \"Modifications à mettre en staging :\"")
+
+  if choice == options[0]  # "Tout ajouter"
     system("git add .")
+  elsif choice == options[1]  # "Sélectionner des fichiers"
+    files = unstaged.map { |line| line.split[1] }  # Extrait les noms de fichiers
+    selected = run_gum("choose --no-limit \"#{files.join('" "')}\" --header \"Sélectionnez les fichiers :\"").split
+    system("git add #{selected.map { |f| Shellwords.shellescape(f) }.join(' ')}") unless selected.empty?
   end
 end
 
-# Prompt for commit type
-type = prompt.select("Choose the type of commit:", ["fix", "feat", "docs", "style", "refactor", "test", "chore", "revert"])
+# Logique principale
+stage_changes  # Appelle la fonction pour gérer le staging
 
-# Prompt for optional scope
-scope = prompt.ask("Scope (optional):", default: "")
+types = %w[fix feat docs style refactor test chore revert].join(" ")
+type = run_gum("choose #{types}")
+scope = run_gum('input --placeholder "scope"')
 
-# Wrap the scope in parentheses if it has a value
 scope = "(#{scope})" unless scope.empty?
 
-# Pre-populate the input with the type(scope): so that the user may change it
-summary = prompt.ask("Summary of this change:", default: "#{type}#{scope}: ")
+summary = run_gum("input --value \"#{type}#{scope}: \" --placeholder \"Summary of this change\"")
+description = run_gum('write --placeholder "Details of this change"')
 
-# Prompt for detailed description
-description = prompt.ask("Details of this change (press Enter to finish):", multiline: true)
-
-# Confirm before committing
-if prompt.yes?("Commit changes?")
-  # Properly escape the summary and description for the git commit command
-  system("git", "commit", "-m", summary, "-m", description)
+# Validation et commit
+if system("gum confirm \"Commit changes?\"")
+  system("git commit -m #{Shellwords.shellescape(summary)} -m #{Shellwords.shellescape(description)}")
 end
