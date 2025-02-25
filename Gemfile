@@ -29,6 +29,7 @@ group :jekyll_plugins do
   gem "jekyll-toc"
   gem "jekyll-assets"
   # gem "jekyll-admin"
+  gem "github-pages-unscramble"
 end
 
 gem "fiddle"

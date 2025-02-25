@@ -20,6 +20,7 @@ typos = 'latest'
 gum = "latest"
 glow = "latest"
 skate = "latest"
+act = "latest"
 
 [task_config]
 includes = ["./.mise/tasks.toml"]

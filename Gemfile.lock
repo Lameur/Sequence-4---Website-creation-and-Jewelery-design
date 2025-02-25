@@ -34,6 +34,7 @@ GEM
     fiddle (1.1.6)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
+    github-pages-unscramble (0.1.0)
     google-protobuf (4.29.3)
       bigdecimal
       rake (>= 13)
@@ -218,6 +219,7 @@ PLATFORMS
 DEPENDENCIES
   faraday-retry
   fiddle
+  github-pages-unscramble
   http_parser.rb (~> 0.6.0)
   jekyll
   jekyll-assets

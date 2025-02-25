@@ -11,4 +11,4 @@ rhythms of their environment. Additionally, the Xinca language, though it has di
 is a vital component of their cultural heritage. Efforts are underway within the community to
 revitalize and preserve their linguistic traditions.
 
-![](https://culturasdeguatemala.top/wp-content/uploads/2022/01/vestimenta-de-los-xinca-1.jpg)
+![Culture](https://culturasdeguatemala.top/wp-content/uploads/2022/01/vestimenta-de-los-xinca-1.jpg)
