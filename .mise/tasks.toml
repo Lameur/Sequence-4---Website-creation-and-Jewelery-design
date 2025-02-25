@@ -13,13 +13,13 @@ hide = true
 
 ["bundle:install"]
 description = 'Install gem dependencies'
-run = 'gum spin bundle install --show-output --spinner minidot --title "Installing bundle..."'
+run = 'gum spin --show-output --spinner minidot --title "Installing bundle..." -- bundle install'
 hide = true
 alias = 'bi'
 
 ["bundle:update"]
 description = 'Update gem'
-run = 'gum spin --show-output --spinner minidot --title "Updating bundle..." -- bundle update'
+run = 'gum spin --show-output --spinner minidot --title "Updating bundle..." -- bundle update --all'
 hide = true
 alias = 'bu'
 
@@ -34,8 +34,6 @@ description = 'Serve locally the website'
 depends = ['bundle:install', 'build']
 run = 'gum spin --show-output --spinner minidot --title "Serving jekyll site..." -- bundle exec jekyll server'
 alias = 's'
-
-[]
 
 [commit]
 description = 'Commit change'
