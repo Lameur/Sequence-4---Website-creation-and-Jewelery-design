@@ -41,9 +41,9 @@ their deep connection with nature.
 - Add a second cylinder, resize it to 55 mm diameter, and define it as a "Hole" (toolbar option).
 - Align the two cylinders at the center, then use the "Group" tool (Ctrl+G) to subtract the hole and form a hollow strip.
 
-![Image description: A 60 mm solid cylinder with a 55 mm "Hole" cylinder superimposed, followed by a view of the hollow band after grouping.](/assets/img/Capture%20d%27%C3%A9cran%202025-02-24%20183353-1740421264906-11.png)
+![Image description: A 60 mm solid cylinder with a 55 mm "Hole" cylinder superimposed, followed by a view of the hollow band after grouping.](assets/img/Capture%20d%27%C3%A9cran%202025-02-24%20183353-1740421264906-11.png)
 
-![Image description: A 60 mm solid cylinder with a 55 mm "Hole" cylinder superimposed, followed by a view of the hollow band after grouping.](/assets/img/Capture%20d%27%C3%A9cran%202025-02-24%20183416-1740421253711-9.png)
+![Image description: A 60 mm solid cylinder with a 55 mm "Hole" cylinder superimposed, followed by a view of the hollow band after grouping.](assets/img/Capture%20d%27%C3%A9cran%202025-02-24%20183416-1740421253711-9.png)
 
 ---
 
@@ -53,9 +53,9 @@ their deep connection with nature.
 - Adjust its size to 5 mm in diameter using the resizing handles.
 - Duplicate the sphere (Ctrl+D) 10 to 15 times to create a set of beads.
 
-![Image description: A single 5 mm sphere, then a row of duplicated spheres aligned on the work surface.](/assets/img/Capture%20d%27%C3%A9cran%202025-02-24%20183657.png)
+![Image description: A single 5 mm sphere, then a row of duplicated spheres aligned on the work surface.](assets/img/Capture%20d%27%C3%A9cran%202025-02-24%20183657.png)
 
-![Image description: A single 5 mm sphere, then a row of duplicated spheres aligned on the work surface.](/assets/img/Capture%20d%27%C3%A9cran%202025-02-24%20183917.png)
+![Image description: A single 5 mm sphere, then a row of duplicated spheres aligned on the work surface.](assets/img/Capture%20d%27%C3%A9cran%202025-02-24%20183917.png)
 
 ---
 
