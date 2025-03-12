@@ -38,6 +38,7 @@ gem "faraday-retry"
 gem "rack"
 gem "webrick"
 gem "nokogiri", ">= 1.18.3"
+gem "rake", ">= 10.0.0"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
